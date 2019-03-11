@@ -53,4 +53,21 @@
         TxtBoxMax.Visible = True
     End Sub
 
+    Private Sub PulsanteReset_Click(sender As Object, e As EventArgs) Handles PulsanteReset.Click
+        'Reimpostazione
+        SelezAlunni.Value = 0
+        PulsanteVoti.Visible = False
+        TxtMedia.Visible = False
+        TxtBoxMedia.Visible = False
+        TxtBoxMedia.Text = 0
+        TxtSomma.Visible = False
+        TxtBoxSomma.Visible = False
+        TxtBoxSomma.Text = 0
+        TxtMin.Visible = False
+        TxtBoxMin.Visible = False
+        TxtBoxMin.Text = 0
+        TxtMax.Visible = False
+        TxtBoxMax.Visible = False
+        TxtBoxMax.Text = 0
+    End Sub
 End Class

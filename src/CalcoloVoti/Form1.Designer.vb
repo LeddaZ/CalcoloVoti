@@ -37,6 +37,7 @@ Partial Class CalcoloVoti
         Me.TxtBoxMin = New System.Windows.Forms.TextBox()
         Me.TxtMax = New System.Windows.Forms.Label()
         Me.TxtBoxMax = New System.Windows.Forms.TextBox()
+        Me.PulsanteReset = New System.Windows.Forms.Button()
         CType(Me.SelezAlunni, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -156,7 +157,7 @@ Partial Class CalcoloVoti
         Me.TxtVersione.Name = "TxtVersione"
         Me.TxtVersione.Size = New System.Drawing.Size(43, 21)
         Me.TxtVersione.TabIndex = 10
-        Me.TxtVersione.Text = "1.0.2"
+        Me.TxtVersione.Text = "1.0.3"
         '
         'TxtMin
         '
@@ -203,12 +204,23 @@ Partial Class CalcoloVoti
         Me.TxtBoxMax.TabIndex = 14
         Me.TxtBoxMax.Visible = False
         '
+        'PulsanteReset
+        '
+        Me.PulsanteReset.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PulsanteReset.Location = New System.Drawing.Point(713, 12)
+        Me.PulsanteReset.Name = "PulsanteReset"
+        Me.PulsanteReset.Size = New System.Drawing.Size(75, 23)
+        Me.PulsanteReset.TabIndex = 15
+        Me.PulsanteReset.Text = "Reimposta"
+        Me.PulsanteReset.UseVisualStyleBackColor = True
+        '
         'CalcoloVoti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PulsanteReset)
         Me.Controls.Add(Me.TxtBoxMax)
         Me.Controls.Add(Me.TxtMax)
         Me.Controls.Add(Me.TxtBoxMin)
@@ -247,4 +259,5 @@ Partial Class CalcoloVoti
     Friend WithEvents TxtBoxMin As TextBox
     Friend WithEvents TxtMax As Label
     Friend WithEvents TxtBoxMax As TextBox
+    Friend WithEvents PulsanteReset As Button
 End Class
