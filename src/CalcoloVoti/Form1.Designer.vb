@@ -33,6 +33,10 @@ Partial Class CalcoloVoti
         Me.TxtSomma = New System.Windows.Forms.Label()
         Me.TxtBoxSomma = New System.Windows.Forms.TextBox()
         Me.TxtVersione = New System.Windows.Forms.Label()
+        Me.TxtMin = New System.Windows.Forms.Label()
+        Me.TxtBoxMin = New System.Windows.Forms.TextBox()
+        Me.TxtMax = New System.Windows.Forms.Label()
+        Me.TxtBoxMax = New System.Windows.Forms.TextBox()
         CType(Me.SelezAlunni, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -138,6 +142,7 @@ Partial Class CalcoloVoti
         Me.TxtBoxSomma.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBoxSomma.Location = New System.Drawing.Point(181, 204)
         Me.TxtBoxSomma.Name = "TxtBoxSomma"
+        Me.TxtBoxSomma.ReadOnly = True
         Me.TxtBoxSomma.Size = New System.Drawing.Size(66, 22)
         Me.TxtBoxSomma.TabIndex = 9
         Me.TxtBoxSomma.Visible = False
@@ -151,7 +156,52 @@ Partial Class CalcoloVoti
         Me.TxtVersione.Name = "TxtVersione"
         Me.TxtVersione.Size = New System.Drawing.Size(43, 21)
         Me.TxtVersione.TabIndex = 10
-        Me.TxtVersione.Text = "1.0.1"
+        Me.TxtVersione.Text = "1.0.2"
+        '
+        'TxtMin
+        '
+        Me.TxtMin.AutoSize = True
+        Me.TxtMin.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtMin.ForeColor = System.Drawing.Color.White
+        Me.TxtMin.Location = New System.Drawing.Point(52, 237)
+        Me.TxtMin.Name = "TxtMin"
+        Me.TxtMin.Size = New System.Drawing.Size(123, 21)
+        Me.TxtMin.TabIndex = 11
+        Me.TxtMin.Text = "Il voto minimo è"
+        Me.TxtMin.Visible = False
+        '
+        'TxtBoxMin
+        '
+        Me.TxtBoxMin.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxMin.Location = New System.Drawing.Point(181, 237)
+        Me.TxtBoxMin.Name = "TxtBoxMin"
+        Me.TxtBoxMin.ReadOnly = True
+        Me.TxtBoxMin.Size = New System.Drawing.Size(66, 22)
+        Me.TxtBoxMin.TabIndex = 12
+        Me.TxtBoxMin.Visible = False
+        '
+        'TxtMax
+        '
+        Me.TxtMax.AutoSize = True
+        Me.TxtMax.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtMax.ForeColor = System.Drawing.Color.White
+        Me.TxtMax.Location = New System.Drawing.Point(43, 270)
+        Me.TxtMax.Name = "TxtMax"
+        Me.TxtMax.Size = New System.Drawing.Size(132, 21)
+        Me.TxtMax.TabIndex = 13
+        Me.TxtMax.Text = "Il voto massimo è"
+        Me.TxtMax.Visible = False
+        '
+        'TxtBoxMax
+        '
+        Me.TxtBoxMax.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxMax.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.TxtBoxMax.Location = New System.Drawing.Point(181, 270)
+        Me.TxtBoxMax.Name = "TxtBoxMax"
+        Me.TxtBoxMax.ReadOnly = True
+        Me.TxtBoxMax.Size = New System.Drawing.Size(66, 22)
+        Me.TxtBoxMax.TabIndex = 14
+        Me.TxtBoxMax.Visible = False
         '
         'CalcoloVoti
         '
@@ -159,6 +209,10 @@ Partial Class CalcoloVoti
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TxtBoxMax)
+        Me.Controls.Add(Me.TxtMax)
+        Me.Controls.Add(Me.TxtBoxMin)
+        Me.Controls.Add(Me.TxtMin)
         Me.Controls.Add(Me.TxtVersione)
         Me.Controls.Add(Me.TxtBoxSomma)
         Me.Controls.Add(Me.TxtSomma)
@@ -189,4 +243,8 @@ Partial Class CalcoloVoti
     Friend WithEvents TxtSomma As Label
     Friend WithEvents TxtBoxSomma As TextBox
     Friend WithEvents TxtVersione As Label
+    Friend WithEvents TxtMin As Label
+    Friend WithEvents TxtBoxMin As TextBox
+    Friend WithEvents TxtMax As Label
+    Friend WithEvents TxtBoxMax As TextBox
 End Class
