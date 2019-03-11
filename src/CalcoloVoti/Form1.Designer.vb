@@ -32,6 +32,7 @@ Partial Class CalcoloVoti
         Me.TxtAutore = New System.Windows.Forms.Label()
         Me.TxtSomma = New System.Windows.Forms.Label()
         Me.TxtBoxSomma = New System.Windows.Forms.TextBox()
+        Me.TxtVersione = New System.Windows.Forms.Label()
         CType(Me.SelezAlunni, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,6 +62,7 @@ Partial Class CalcoloVoti
         '
         Me.SelezAlunni.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SelezAlunni.Location = New System.Drawing.Point(226, 78)
+        Me.SelezAlunni.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.SelezAlunni.Name = "SelezAlunni"
         Me.SelezAlunni.Size = New System.Drawing.Size(84, 22)
         Me.SelezAlunni.TabIndex = 2
@@ -140,12 +142,24 @@ Partial Class CalcoloVoti
         Me.TxtBoxSomma.TabIndex = 9
         Me.TxtBoxSomma.Visible = False
         '
+        'TxtVersione
+        '
+        Me.TxtVersione.AutoSize = True
+        Me.TxtVersione.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtVersione.ForeColor = System.Drawing.Color.White
+        Me.TxtVersione.Location = New System.Drawing.Point(12, 420)
+        Me.TxtVersione.Name = "TxtVersione"
+        Me.TxtVersione.Size = New System.Drawing.Size(43, 21)
+        Me.TxtVersione.TabIndex = 10
+        Me.TxtVersione.Text = "1.0.1"
+        '
         'CalcoloVoti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TxtVersione)
         Me.Controls.Add(Me.TxtBoxSomma)
         Me.Controls.Add(Me.TxtSomma)
         Me.Controls.Add(Me.TxtAutore)
@@ -174,4 +188,5 @@ Partial Class CalcoloVoti
     Friend WithEvents TxtAutore As Label
     Friend WithEvents TxtSomma As Label
     Friend WithEvents TxtBoxSomma As TextBox
+    Friend WithEvents TxtVersione As Label
 End Class
