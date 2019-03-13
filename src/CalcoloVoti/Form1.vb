@@ -70,4 +70,34 @@
         TxtBoxMax.Visible = False
         TxtBoxMax.Text = 0
     End Sub
+    Private Sub PulsanteChiaro_Click(sender As Object, e As EventArgs) Handles PulsanteChiaro.Click
+        PulsanteScuro.Visible = True
+        PulsanteChiaro.Visible = False
+        Me.BackColor = Color.White
+        TxtTitolo.ForeColor = Color.Black
+        TxtAlunni.ForeColor = Color.Black
+        TxtAutore.ForeColor = Color.Black
+        TxtMax.ForeColor = Color.Black
+        TxtMedia.ForeColor = Color.Black
+        TxtMin.ForeColor = Color.Black
+        TxtSomma.ForeColor = Color.Black
+        TxtTema.ForeColor = Color.Black
+        TxtVersione.ForeColor = Color.Black
+    End Sub
+
+    Private Sub PulsanteScuro_Click(sender As Object, e As EventArgs) Handles PulsanteScuro.Click
+        PulsanteChiaro.Visible = True
+        PulsanteScuro.Visible = False
+        Me.BackColor = Color.Black
+        TxtTitolo.ForeColor = Color.White
+        TxtAlunni.ForeColor = Color.White
+        TxtAutore.ForeColor = Color.White
+        TxtMax.ForeColor = Color.White
+        TxtMedia.ForeColor = Color.White
+        TxtMin.ForeColor = Color.White
+        TxtSomma.ForeColor = Color.White
+        TxtTema.ForeColor = Color.White
+        TxtVersione.ForeColor = Color.White
+    End Sub
 End Class
+

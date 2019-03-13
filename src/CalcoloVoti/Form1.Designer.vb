@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class CalcoloVoti
     Inherits System.Windows.Forms.Form
 
     'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,13 @@ Partial Class CalcoloVoti
     'NOTA: la procedura che segue è richiesta da Progettazione Windows Form
     'Può essere modificata in Progettazione Windows Form.  
     'Non modificarla mediante l'editor del codice.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TxtTitolo = New System.Windows.Forms.Label()
         Me.TxtAlunni = New System.Windows.Forms.Label()
         Me.SelezAlunni = New System.Windows.Forms.NumericUpDown()
         Me.PulsanteVoti = New System.Windows.Forms.Button()
         Me.TxtMedia = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtBoxMedia = New System.Windows.Forms.TextBox()
         Me.TxtAutore = New System.Windows.Forms.Label()
         Me.TxtSomma = New System.Windows.Forms.Label()
@@ -38,6 +37,9 @@ Partial Class CalcoloVoti
         Me.TxtMax = New System.Windows.Forms.Label()
         Me.TxtBoxMax = New System.Windows.Forms.TextBox()
         Me.PulsanteReset = New System.Windows.Forms.Button()
+        Me.TxtTema = New System.Windows.Forms.Label()
+        Me.PulsanteChiaro = New System.Windows.Forms.Button()
+        Me.PulsanteScuro = New System.Windows.Forms.Button()
         CType(Me.SelezAlunni, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -95,15 +97,6 @@ Partial Class CalcoloVoti
         Me.TxtMedia.Text = "La media dei voti è"
         Me.TxtMedia.Visible = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(479, 245)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Label1"
-        '
         'TxtBoxMedia
         '
         Me.TxtBoxMedia.BackColor = System.Drawing.Color.White
@@ -140,6 +133,7 @@ Partial Class CalcoloVoti
         '
         'TxtBoxSomma
         '
+        Me.TxtBoxSomma.BackColor = System.Drawing.Color.White
         Me.TxtBoxSomma.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBoxSomma.Location = New System.Drawing.Point(181, 204)
         Me.TxtBoxSomma.Name = "TxtBoxSomma"
@@ -157,7 +151,7 @@ Partial Class CalcoloVoti
         Me.TxtVersione.Name = "TxtVersione"
         Me.TxtVersione.Size = New System.Drawing.Size(43, 21)
         Me.TxtVersione.TabIndex = 10
-        Me.TxtVersione.Text = "1.0.3"
+        Me.TxtVersione.Text = "1.0.4"
         '
         'TxtMin
         '
@@ -173,6 +167,7 @@ Partial Class CalcoloVoti
         '
         'TxtBoxMin
         '
+        Me.TxtBoxMin.BackColor = System.Drawing.Color.White
         Me.TxtBoxMin.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBoxMin.Location = New System.Drawing.Point(181, 237)
         Me.TxtBoxMin.Name = "TxtBoxMin"
@@ -195,6 +190,7 @@ Partial Class CalcoloVoti
         '
         'TxtBoxMax
         '
+        Me.TxtBoxMax.BackColor = System.Drawing.Color.White
         Me.TxtBoxMax.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBoxMax.ForeColor = System.Drawing.SystemColors.WindowText
         Me.TxtBoxMax.Location = New System.Drawing.Point(181, 270)
@@ -207,12 +203,44 @@ Partial Class CalcoloVoti
         'PulsanteReset
         '
         Me.PulsanteReset.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PulsanteReset.Location = New System.Drawing.Point(713, 12)
+        Me.PulsanteReset.Location = New System.Drawing.Point(689, 12)
         Me.PulsanteReset.Name = "PulsanteReset"
-        Me.PulsanteReset.Size = New System.Drawing.Size(75, 23)
+        Me.PulsanteReset.Size = New System.Drawing.Size(99, 23)
         Me.PulsanteReset.TabIndex = 15
         Me.PulsanteReset.Text = "Reimposta"
         Me.PulsanteReset.UseVisualStyleBackColor = True
+        '
+        'TxtTema
+        '
+        Me.TxtTema.AutoSize = True
+        Me.TxtTema.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTema.ForeColor = System.Drawing.Color.White
+        Me.TxtTema.Location = New System.Drawing.Point(12, 377)
+        Me.TxtTema.Name = "TxtTema"
+        Me.TxtTema.Size = New System.Drawing.Size(46, 21)
+        Me.TxtTema.TabIndex = 16
+        Me.TxtTema.Text = "Tema"
+        '
+        'PulsanteChiaro
+        '
+        Me.PulsanteChiaro.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PulsanteChiaro.Location = New System.Drawing.Point(64, 375)
+        Me.PulsanteChiaro.Name = "PulsanteChiaro"
+        Me.PulsanteChiaro.Size = New System.Drawing.Size(75, 23)
+        Me.PulsanteChiaro.TabIndex = 17
+        Me.PulsanteChiaro.Text = "Chiaro"
+        Me.PulsanteChiaro.UseVisualStyleBackColor = True
+        '
+        'PulsanteScuro
+        '
+        Me.PulsanteScuro.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PulsanteScuro.Location = New System.Drawing.Point(64, 375)
+        Me.PulsanteScuro.Name = "PulsanteScuro"
+        Me.PulsanteScuro.Size = New System.Drawing.Size(75, 23)
+        Me.PulsanteScuro.TabIndex = 18
+        Me.PulsanteScuro.Text = "Scuro"
+        Me.PulsanteScuro.UseVisualStyleBackColor = True
+        Me.PulsanteScuro.Visible = False
         '
         'CalcoloVoti
         '
@@ -220,6 +248,9 @@ Partial Class CalcoloVoti
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PulsanteScuro)
+        Me.Controls.Add(Me.PulsanteChiaro)
+        Me.Controls.Add(Me.TxtTema)
         Me.Controls.Add(Me.PulsanteReset)
         Me.Controls.Add(Me.TxtBoxMax)
         Me.Controls.Add(Me.TxtMax)
@@ -230,7 +261,6 @@ Partial Class CalcoloVoti
         Me.Controls.Add(Me.TxtSomma)
         Me.Controls.Add(Me.TxtAutore)
         Me.Controls.Add(Me.TxtBoxMedia)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TxtMedia)
         Me.Controls.Add(Me.PulsanteVoti)
         Me.Controls.Add(Me.SelezAlunni)
@@ -249,7 +279,6 @@ Partial Class CalcoloVoti
     Friend WithEvents SelezAlunni As NumericUpDown
     Friend WithEvents PulsanteVoti As Button
     Friend WithEvents TxtMedia As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents TxtBoxMedia As TextBox
     Friend WithEvents TxtAutore As Label
     Friend WithEvents TxtSomma As Label
@@ -260,4 +289,7 @@ Partial Class CalcoloVoti
     Friend WithEvents TxtMax As Label
     Friend WithEvents TxtBoxMax As TextBox
     Friend WithEvents PulsanteReset As Button
+    Friend WithEvents TxtTema As Label
+    Friend WithEvents PulsanteChiaro As Button
+    Friend WithEvents PulsanteScuro As Button
 End Class
