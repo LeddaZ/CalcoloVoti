@@ -70,34 +70,59 @@
         TxtBoxMax.Visible = False
         TxtBoxMax.Text = 0
     End Sub
-    Private Sub PulsanteChiaro_Click(sender As Object, e As EventArgs) Handles PulsanteChiaro.Click
-        PulsanteScuro.Visible = True
-        PulsanteChiaro.Visible = False
-        Me.BackColor = Color.White
-        TxtTitolo.ForeColor = Color.Black
-        TxtAlunni.ForeColor = Color.Black
-        TxtAutore.ForeColor = Color.Black
-        TxtMax.ForeColor = Color.Black
-        TxtMedia.ForeColor = Color.Black
-        TxtMin.ForeColor = Color.Black
-        TxtSomma.ForeColor = Color.Black
-        TxtTema.ForeColor = Color.Black
-        TxtVersione.ForeColor = Color.Black
+
+    Private Sub RadioChiaro_CheckedChanged(sender As Object, e As EventArgs) Handles RadioChiaro.CheckedChanged
+        If RadioChiaro.Checked = True Then
+            Me.BackColor = Color.White
+            TxtTitolo.ForeColor = Color.Black
+            TxtAlunni.ForeColor = Color.Black
+            TxtMedia.ForeColor = Color.Black
+            TxtSomma.ForeColor = Color.Black
+            TxtMax.ForeColor = Color.Black
+            TxtMin.ForeColor = Color.Black
+            TxtTema.ForeColor = Color.Black
+            TxtVersione.ForeColor = Color.Black
+            TxtAutore.ForeColor = Color.Black
+            RadioChiaro.ForeColor = Color.Black
+            RadioScuro.ForeColor = Color.Black
+            RadioVerde.ForeColor = Color.Black
+        End If
     End Sub
 
-    Private Sub PulsanteScuro_Click(sender As Object, e As EventArgs) Handles PulsanteScuro.Click
-        PulsanteChiaro.Visible = True
-        PulsanteScuro.Visible = False
-        Me.BackColor = Color.Black
-        TxtTitolo.ForeColor = Color.White
-        TxtAlunni.ForeColor = Color.White
-        TxtAutore.ForeColor = Color.White
-        TxtMax.ForeColor = Color.White
-        TxtMedia.ForeColor = Color.White
-        TxtMin.ForeColor = Color.White
-        TxtSomma.ForeColor = Color.White
-        TxtTema.ForeColor = Color.White
-        TxtVersione.ForeColor = Color.White
+    Private Sub RadioScuro_CheckedChanged(sender As Object, e As EventArgs) Handles RadioScuro.CheckedChanged
+        If RadioScuro.Checked = True Then
+            Me.BackColor = Color.Black
+            TxtTitolo.ForeColor = Color.White
+            TxtAlunni.ForeColor = Color.White
+            TxtMedia.ForeColor = Color.White
+            TxtSomma.ForeColor = Color.White
+            TxtMax.ForeColor = Color.White
+            TxtMin.ForeColor = Color.White
+            TxtTema.ForeColor = Color.White
+            TxtVersione.ForeColor = Color.White
+            TxtAutore.ForeColor = Color.White
+            RadioChiaro.ForeColor = Color.White
+            RadioScuro.ForeColor = Color.White
+            RadioVerde.ForeColor = Color.White
+        End If
+    End Sub
+
+    Private Sub RadioVerde_CheckedChanged(sender As Object, e As EventArgs) Handles RadioVerde.CheckedChanged
+        If RadioVerde.Checked = True Then
+            Me.BackColor = Color.Black
+            TxtTitolo.ForeColor = Color.GreenYellow
+            TxtAlunni.ForeColor = Color.GreenYellow
+            TxtMedia.ForeColor = Color.GreenYellow
+            TxtSomma.ForeColor = Color.GreenYellow
+            TxtMax.ForeColor = Color.GreenYellow
+            TxtMin.ForeColor = Color.GreenYellow
+            TxtTema.ForeColor = Color.GreenYellow
+            TxtVersione.ForeColor = Color.GreenYellow
+            TxtAutore.ForeColor = Color.GreenYellow
+            RadioChiaro.ForeColor = Color.GreenYellow
+            RadioScuro.ForeColor = Color.GreenYellow
+            RadioVerde.ForeColor = Color.GreenYellow
+        End If
     End Sub
 End Class
 
