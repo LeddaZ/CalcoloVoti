@@ -37,11 +37,16 @@ Partial Class CalcoloVoti
         Me.TxtMax = New System.Windows.Forms.Label()
         Me.TxtBoxMax = New System.Windows.Forms.TextBox()
         Me.PulsanteReset = New System.Windows.Forms.Button()
-        Me.TxtTema = New System.Windows.Forms.Label()
         Me.RadioChiaro = New System.Windows.Forms.RadioButton()
         Me.RadioScuro = New System.Windows.Forms.RadioButton()
-        Me.RadioVerde = New System.Windows.Forms.RadioButton()
+        Me.RadioGiallo = New System.Windows.Forms.RadioButton()
+        Me.GBoxTemi = New System.Windows.Forms.GroupBox()
+        Me.TxtSuff = New System.Windows.Forms.Label()
+        Me.TxtBoxSuff = New System.Windows.Forms.TextBox()
+        Me.TxtInsuff = New System.Windows.Forms.Label()
+        Me.TxtBoxInsuff = New System.Windows.Forms.TextBox()
         CType(Me.SelezAlunni, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GBoxTemi.SuspendLayout()
         Me.SuspendLayout()
         '
         'TxtTitolo
@@ -51,9 +56,9 @@ Partial Class CalcoloVoti
         Me.TxtTitolo.ForeColor = System.Drawing.Color.Black
         Me.TxtTitolo.Location = New System.Drawing.Point(13, 13)
         Me.TxtTitolo.Name = "TxtTitolo"
-        Me.TxtTitolo.Size = New System.Drawing.Size(155, 30)
+        Me.TxtTitolo.Size = New System.Drawing.Size(117, 30)
         Me.TxtTitolo.TabIndex = 0
-        Me.TxtTitolo.Text = "Calcolo dei voti"
+        Me.TxtTitolo.Text = "CalcoloVoti"
         '
         'TxtAlunni
         '
@@ -114,7 +119,7 @@ Partial Class CalcoloVoti
         Me.TxtAutore.AutoSize = True
         Me.TxtAutore.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtAutore.ForeColor = System.Drawing.Color.Black
-        Me.TxtAutore.Location = New System.Drawing.Point(414, 420)
+        Me.TxtAutore.Location = New System.Drawing.Point(375, 438)
         Me.TxtAutore.Name = "TxtAutore"
         Me.TxtAutore.Size = New System.Drawing.Size(35, 21)
         Me.TxtAutore.TabIndex = 7
@@ -148,11 +153,11 @@ Partial Class CalcoloVoti
         Me.TxtVersione.AutoSize = True
         Me.TxtVersione.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtVersione.ForeColor = System.Drawing.Color.Black
-        Me.TxtVersione.Location = New System.Drawing.Point(12, 420)
+        Me.TxtVersione.Location = New System.Drawing.Point(367, 417)
         Me.TxtVersione.Name = "TxtVersione"
         Me.TxtVersione.Size = New System.Drawing.Size(43, 21)
         Me.TxtVersione.TabIndex = 10
-        Me.TxtVersione.Text = "1.0.5"
+        Me.TxtVersione.Text = "1.1.0"
         '
         'TxtMin
         '
@@ -204,23 +209,12 @@ Partial Class CalcoloVoti
         'PulsanteReset
         '
         Me.PulsanteReset.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PulsanteReset.Location = New System.Drawing.Point(350, 12)
+        Me.PulsanteReset.Location = New System.Drawing.Point(314, 12)
         Me.PulsanteReset.Name = "PulsanteReset"
         Me.PulsanteReset.Size = New System.Drawing.Size(99, 23)
         Me.PulsanteReset.TabIndex = 15
         Me.PulsanteReset.Text = "Reimposta"
         Me.PulsanteReset.UseVisualStyleBackColor = True
-        '
-        'TxtTema
-        '
-        Me.TxtTema.AutoSize = True
-        Me.TxtTema.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTema.ForeColor = System.Drawing.Color.Black
-        Me.TxtTema.Location = New System.Drawing.Point(12, 368)
-        Me.TxtTema.Name = "TxtTema"
-        Me.TxtTema.Size = New System.Drawing.Size(46, 21)
-        Me.TxtTema.TabIndex = 16
-        Me.TxtTema.Text = "Tema"
         '
         'RadioChiaro
         '
@@ -228,7 +222,7 @@ Partial Class CalcoloVoti
         Me.RadioChiaro.Checked = True
         Me.RadioChiaro.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioChiaro.ForeColor = System.Drawing.Color.Black
-        Me.RadioChiaro.Location = New System.Drawing.Point(77, 349)
+        Me.RadioChiaro.Location = New System.Drawing.Point(6, 24)
         Me.RadioChiaro.Name = "RadioChiaro"
         Me.RadioChiaro.Size = New System.Drawing.Size(59, 17)
         Me.RadioChiaro.TabIndex = 17
@@ -241,35 +235,93 @@ Partial Class CalcoloVoti
         Me.RadioScuro.AutoSize = True
         Me.RadioScuro.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioScuro.ForeColor = System.Drawing.Color.Black
-        Me.RadioScuro.Location = New System.Drawing.Point(77, 372)
+        Me.RadioScuro.Location = New System.Drawing.Point(6, 47)
         Me.RadioScuro.Name = "RadioScuro"
         Me.RadioScuro.Size = New System.Drawing.Size(54, 17)
         Me.RadioScuro.TabIndex = 18
         Me.RadioScuro.Text = "Scuro"
         Me.RadioScuro.UseVisualStyleBackColor = True
         '
-        'RadioVerde
+        'RadioGiallo
         '
-        Me.RadioVerde.AutoSize = True
-        Me.RadioVerde.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioVerde.ForeColor = System.Drawing.Color.Black
-        Me.RadioVerde.Location = New System.Drawing.Point(77, 395)
-        Me.RadioVerde.Name = "RadioVerde"
-        Me.RadioVerde.Size = New System.Drawing.Size(54, 17)
-        Me.RadioVerde.TabIndex = 19
-        Me.RadioVerde.Text = "Verde"
-        Me.RadioVerde.UseVisualStyleBackColor = True
+        Me.RadioGiallo.AutoSize = True
+        Me.RadioGiallo.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioGiallo.ForeColor = System.Drawing.Color.Black
+        Me.RadioGiallo.Location = New System.Drawing.Point(6, 70)
+        Me.RadioGiallo.Name = "RadioGiallo"
+        Me.RadioGiallo.Size = New System.Drawing.Size(55, 17)
+        Me.RadioGiallo.TabIndex = 19
+        Me.RadioGiallo.Text = "Giallo"
+        Me.RadioGiallo.UseVisualStyleBackColor = True
+        '
+        'GBoxTemi
+        '
+        Me.GBoxTemi.Controls.Add(Me.RadioChiaro)
+        Me.GBoxTemi.Controls.Add(Me.RadioGiallo)
+        Me.GBoxTemi.Controls.Add(Me.RadioScuro)
+        Me.GBoxTemi.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GBoxTemi.Location = New System.Drawing.Point(333, 58)
+        Me.GBoxTemi.Name = "GBoxTemi"
+        Me.GBoxTemi.Size = New System.Drawing.Size(77, 100)
+        Me.GBoxTemi.TabIndex = 20
+        Me.GBoxTemi.TabStop = False
+        Me.GBoxTemi.Text = "Tema"
+        '
+        'TxtSuff
+        '
+        Me.TxtSuff.AutoSize = True
+        Me.TxtSuff.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtSuff.Location = New System.Drawing.Point(27, 302)
+        Me.TxtSuff.Name = "TxtSuff"
+        Me.TxtSuff.Size = New System.Drawing.Size(153, 21)
+        Me.TxtSuff.TabIndex = 21
+        Me.TxtSuff.Text = "I voti sufficienti sono"
+        Me.TxtSuff.Visible = False
+        '
+        'TxtBoxSuff
+        '
+        Me.TxtBoxSuff.BackColor = System.Drawing.Color.White
+        Me.TxtBoxSuff.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxSuff.Location = New System.Drawing.Point(181, 301)
+        Me.TxtBoxSuff.Name = "TxtBoxSuff"
+        Me.TxtBoxSuff.ReadOnly = True
+        Me.TxtBoxSuff.Size = New System.Drawing.Size(66, 22)
+        Me.TxtBoxSuff.TabIndex = 22
+        Me.TxtBoxSuff.Visible = False
+        '
+        'TxtInsuff
+        '
+        Me.TxtInsuff.AutoSize = True
+        Me.TxtInsuff.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtInsuff.Location = New System.Drawing.Point(14, 336)
+        Me.TxtInsuff.Name = "TxtInsuff"
+        Me.TxtInsuff.Size = New System.Drawing.Size(166, 21)
+        Me.TxtInsuff.TabIndex = 23
+        Me.TxtInsuff.Text = "I voti insufficienti sono"
+        Me.TxtInsuff.Visible = False
+        '
+        'TxtBoxInsuff
+        '
+        Me.TxtBoxInsuff.BackColor = System.Drawing.Color.White
+        Me.TxtBoxInsuff.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxInsuff.Location = New System.Drawing.Point(181, 335)
+        Me.TxtBoxInsuff.Name = "TxtBoxInsuff"
+        Me.TxtBoxInsuff.ReadOnly = True
+        Me.TxtBoxInsuff.Size = New System.Drawing.Size(66, 22)
+        Me.TxtBoxInsuff.TabIndex = 24
+        Me.TxtBoxInsuff.Visible = False
         '
         'CalcoloVoti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(461, 450)
-        Me.Controls.Add(Me.RadioVerde)
-        Me.Controls.Add(Me.RadioScuro)
-        Me.Controls.Add(Me.RadioChiaro)
-        Me.Controls.Add(Me.TxtTema)
+        Me.ClientSize = New System.Drawing.Size(425, 477)
+        Me.Controls.Add(Me.TxtBoxInsuff)
+        Me.Controls.Add(Me.TxtInsuff)
+        Me.Controls.Add(Me.TxtBoxSuff)
+        Me.Controls.Add(Me.TxtSuff)
+        Me.Controls.Add(Me.GBoxTemi)
         Me.Controls.Add(Me.PulsanteReset)
         Me.Controls.Add(Me.TxtBoxMax)
         Me.Controls.Add(Me.TxtMax)
@@ -286,8 +338,10 @@ Partial Class CalcoloVoti
         Me.Controls.Add(Me.TxtAlunni)
         Me.Controls.Add(Me.TxtTitolo)
         Me.Name = "CalcoloVoti"
-        Me.Text = "Calcolo dei voti"
+        Me.Text = "CalcoloVoti"
         CType(Me.SelezAlunni, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GBoxTemi.ResumeLayout(False)
+        Me.GBoxTemi.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -308,8 +362,12 @@ Partial Class CalcoloVoti
     Friend WithEvents TxtMax As Label
     Friend WithEvents TxtBoxMax As TextBox
     Friend WithEvents PulsanteReset As Button
-    Friend WithEvents TxtTema As Label
     Friend WithEvents RadioChiaro As RadioButton
     Friend WithEvents RadioScuro As RadioButton
-    Friend WithEvents RadioVerde As RadioButton
+    Friend WithEvents RadioGiallo As RadioButton
+    Friend WithEvents GBoxTemi As GroupBox
+    Friend WithEvents TxtSuff As Label
+    Friend WithEvents TxtBoxSuff As TextBox
+    Friend WithEvents TxtInsuff As Label
+    Friend WithEvents TxtBoxInsuff As TextBox
 End Class
