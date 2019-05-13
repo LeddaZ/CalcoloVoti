@@ -119,7 +119,7 @@ Partial Class CalcoloVoti
         Me.TxtAutore.AutoSize = True
         Me.TxtAutore.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtAutore.ForeColor = System.Drawing.Color.Black
-        Me.TxtAutore.Location = New System.Drawing.Point(375, 438)
+        Me.TxtAutore.Location = New System.Drawing.Point(378, 408)
         Me.TxtAutore.Name = "TxtAutore"
         Me.TxtAutore.Size = New System.Drawing.Size(35, 21)
         Me.TxtAutore.TabIndex = 7
@@ -153,11 +153,11 @@ Partial Class CalcoloVoti
         Me.TxtVersione.AutoSize = True
         Me.TxtVersione.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtVersione.ForeColor = System.Drawing.Color.Black
-        Me.TxtVersione.Location = New System.Drawing.Point(367, 417)
+        Me.TxtVersione.Location = New System.Drawing.Point(370, 378)
         Me.TxtVersione.Name = "TxtVersione"
         Me.TxtVersione.Size = New System.Drawing.Size(43, 21)
         Me.TxtVersione.TabIndex = 10
-        Me.TxtVersione.Text = "1.1.0"
+        Me.TxtVersione.Text = "1.1.1"
         '
         'TxtMin
         '
@@ -293,7 +293,7 @@ Partial Class CalcoloVoti
         '
         Me.TxtInsuff.AutoSize = True
         Me.TxtInsuff.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtInsuff.Location = New System.Drawing.Point(14, 336)
+        Me.TxtInsuff.Location = New System.Drawing.Point(14, 335)
         Me.TxtInsuff.Name = "TxtInsuff"
         Me.TxtInsuff.Size = New System.Drawing.Size(166, 21)
         Me.TxtInsuff.TabIndex = 23
@@ -316,7 +316,7 @@ Partial Class CalcoloVoti
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(425, 477)
+        Me.ClientSize = New System.Drawing.Size(425, 442)
         Me.Controls.Add(Me.TxtBoxInsuff)
         Me.Controls.Add(Me.TxtInsuff)
         Me.Controls.Add(Me.TxtBoxSuff)

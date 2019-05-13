@@ -22,10 +22,7 @@
             NumVoti(NumAlunni) = InputBox("Inserisci il voto del " & v & "° alunno", "Inserimento voti")
             Do
                 'Controllo sul numero inserito
-                If NumVoti(NumAlunni) = String.Empty Then
-                    MsgBox("Non è stato inserito nessun numero. Inserire un numero intero compreso tra 1 e 10 inclusi.", MsgBoxStyle.Critical, "Errore")
-                    NumVoti(NumAlunni) = InputBox("Inserisci il voto del " & v & "° alunno", "Inserimento voti")
-                ElseIf NumVoti(NumAlunni) > 10 Then
+                If NumVoti(NumAlunni) > 10 Then
                     MsgBox("Il numero inserito non è valido. Inserire un numero intero compreso tra 1 e 10 inclusi.", MsgBoxStyle.Critical, "Errore")
                     NumVoti(NumAlunni) = InputBox("Inserisci il voto del " & v & "° alunno", "Inserimento voti")
                 ElseIf NumVoti(NumAlunni) < 1 Then
